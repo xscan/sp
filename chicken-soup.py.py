@@ -23,6 +23,7 @@ def main(): #写入txt文本程序
                 xpath_reg = "//section/div/*/text()"
                 results = selector.xpath(xpath_reg)
                 content = results[0]
+                print(content)
                 f.write(content + '\n')
                 count += 1
                 print('********正在爬取中，这是第{}次爬取********'.format(count))
